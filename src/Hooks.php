@@ -17,7 +17,7 @@
  * @file
  */
 
-namespace MediaWiki\Extension\KickSecure;
+namespace MediaWiki\Extension\Kicksecure;
 
 use MediaWiki\Hook\BeforePageDisplayHook;
 use OutputPage;
@@ -31,7 +31,7 @@ class Hooks implements BeforePageDisplayHook {
 	 * @param Skin $skin
 	 */
 	public function onBeforePageDisplay( $out, $skin ): void {
-		$out->addModules( 'ext.KickSecure' );
+		$out->addModules( 'ext.Kicksecure' );
 	}
 
 }
