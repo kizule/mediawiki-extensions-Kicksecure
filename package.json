@@ -1,0 +1,17 @@
+{
+	"name": "BoilerPlate",
+	"private": true,
+	"scripts": {
+		"test": "grunt test"
+	},
+	"devDependencies": {
+		"eslint-config-wikimedia": "0.23.0",
+		"grunt": "1.5.3",
+		"grunt-eslint": "24.0.1",
+		"grunt-stylelint": "0.18.0",
+		"stylelint-config-wikimedia": "0.13.1"
+	},
+	"eslintIgnore": [
+		"vendor/**"
+	]
+}

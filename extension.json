@@ -1,0 +1,41 @@
+{
+	"name": "KickSecure",
+	"author": [
+		"Zoran Dori",
+		"KickSecure"
+	],
+	"url": "https://www.mediawiki.org",
+	"description": "Customizations for the KickSecure wiki",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.35.0"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\BoilerPlate\\": "src/"
+	},
+	"HookHandlers": {
+		"KickSecureHooks": {
+			"class": "MediaWiki\\Extension\\KickSecure\\Hooks"
+		}
+	},
+	"Hooks": {
+		"BeforePageDisplay": "KickSecureHooks"
+	},
+	"ResourceModules": {
+		"ext.KickSecure": {
+			"localBasePath": "resources/ext.KickSecure",
+			"remoteExtPath": "KickSecure/resources/ext.KickSecure",
+			"dependencies": [],
+			"scripts": [
+				"BackToTopButton.js"
+			],
+			"styles": [
+				"BackToTopButton.css"
+			],
+			"packageFiles": [],
+			"messages": []
+		}
+	},
+	"manifest_version": 2
+}
