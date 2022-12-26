@@ -27,13 +27,12 @@
 			"localBasePath": "resources/ext.Kicksecure",
 			"remoteExtPath": "Kicksecure/resources/ext.Kicksecure",
 			"dependencies": [],
-			"scripts": [
-				"BackToTopButton.js"
-			],
 			"styles": [
 				"BackToTopButton.css"
 			],
-			"packageFiles": [],
+			"packageFiles": [
+				"BackToTopButton.js"
+			],
 			"messages": []
 		}
 	},
