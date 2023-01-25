@@ -30,7 +30,7 @@
 			"styles": [
 				"BackToTopButton.css"
 			],
-			"packageFiles": [
+			"scripts": [
 				"BackToTopButton.js"
 			],
 			"messages": []
