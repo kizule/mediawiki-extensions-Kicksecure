@@ -1,40 +1,34 @@
 {
 	"name": "Kicksecure",
+	"version": "1.0.1",
 	"author": [
 		"Zoran Dori",
 		"Kicksecure"
 	],
-	"url": "https://www.kicksecure.com",
-	"description": "Customizations for the Kicksecure wiki",
-	"license-name": "GPL-2.0-or-later",
-	"type": "other",
-	"requires": {
-		"MediaWiki": ">= 1.35.0"
-	},
-	"AutoloadNamespaces": {
-		"MediaWiki\\Extension\\Kicksecure\\": "src/"
-	},
-	"HookHandlers": {
-		"KicksecureHooks": {
-			"class": "MediaWiki\\Extension\\Kicksecure\\Hooks"
-		}
-	},
-	"Hooks": {
-		"BeforePageDisplay": "KicksecureHooks"
+	"url": "https://kicksecure.com",
+	"license-name": "MIT",
+	"type": "parserhook",
+	"AutoloadClasses": {
+		"Hooks": "src/Hooks.php"
 	},
 	"ResourceModules": {
 		"ext.Kicksecure": {
-			"localBasePath": "resources/ext.Kicksecure/",
-			"remoteExtPath": "Kicksecure/resources/ext.Kicksecure/",
-			"dependencies": [],
-			"styles": [
-				"BackToTopButton.css"
-			],
-			"scripts": [
-				"BackToTopButton.js"
-			],
-			"messages": []
+			"scripts": "BackToTopButton.js",
+			"styles": "BackToTopButton.css"
+			"targets": [
+				"mobile",
+				"desktop"
+			]
 		}
 	},
-	"manifest_version": 2
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources/ext.Kicksecure",
+		"remoteExtPath": "KickSecure/resources/ext.Kicksecure"
+	},
+	"Hooks": {
+		"BeforePageDisplay": [
+			"Hooks::onBeforePageDisplay"
+		]
+	},
+	"manifest_version": 1
 }
