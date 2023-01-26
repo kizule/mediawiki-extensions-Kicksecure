@@ -15,7 +15,7 @@
 	"ResourceModules": {
 		"ext.Kicksecure": {
 			"scripts": "BackToTopButton.js",
-			"styles": "BackToTopButton.css"
+			"styles": "BackToTopButton.css",
 			"targets": [
 				"mobile",
 				"desktop"
