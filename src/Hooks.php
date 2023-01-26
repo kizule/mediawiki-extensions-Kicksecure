@@ -17,19 +17,18 @@
  * @file
  */
 
-use MediaWiki\Hook\BeforePageDisplayHook;
 use OutputPage;
 use Skin;
 
-class Hooks implements BeforePageDisplayHook {
+class Hooks {
 
 	/**
 	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/BeforePageDisplay
 	 * @param OutputPage $out
 	 * @param Skin $skin
 	 */
-	public static function onBeforePageDisplay( $out, $skin ): void {
-		$out->addModules( 'ext.Kicksecure' );
+	public static function onBeforePageDisplay( $out, $skin ) {
+		$out->addModules( [ 'ext.Kicksecure' ] );
 	}
 
 }
