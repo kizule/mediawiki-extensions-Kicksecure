@@ -6,7 +6,8 @@
 		"Kicksecure"
 	],
 	"url": "https://kicksecure.com",
-	"license-name": "MIT",
+	"description": "Customizations for the Kicksecure wiki",
+	"license-name": "GPL-2.0-or-later",
 	"type": "parserhook",
 	"AutoloadClasses": {
 		"Hooks": "src/Hooks.php"
