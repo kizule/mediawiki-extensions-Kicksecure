@@ -25,7 +25,7 @@
 	"ResourceModules": {
 		"ext.Kicksecure": {
 			"localBasePath": "resources/ext.Kicksecure",
-			"remoteExtPath": "Kicksecure/resources",
+			"remoteExtPath": "Kicksecure/resources/ext.Kicksecure",
 			"dependencies": [],
 			"styles": [
 				"BackToTopButton.css"
