@@ -17,10 +17,7 @@
  * @file
  */
 
-use OutputPage;
-use Skin;
-
-class Hooks {
+class Kicksecure {
 
 	/**
 	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/BeforePageDisplay
