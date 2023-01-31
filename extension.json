@@ -1,40 +1,39 @@
 {
 	"name": "Kicksecure",
+	"version": "1.0.1",
 	"author": [
 		"Zoran Dori",
 		"Kicksecure"
 	],
-	"url": "https://www.mediawiki.org",
-	"description": "Customizations for the Kicksecure wiki",
+	"url": "https://kicksecure.com",
+	"description": "A simple extension that displays a small floating box saying \"Hello World\" in the lower right corner of the page.",
 	"license-name": "GPL-2.0-or-later",
 	"type": "other",
 	"requires": {
 		"MediaWiki": ">= 1.35.0"
 	},
-	"AutoloadNamespaces": {
-		"MediaWiki\\Extension\\Kicksecure\\": "src/"
-	},
-	"HookHandlers": {
-		"KicksecureHooks": {
-			"class": "MediaWiki\\Extension\\Kicksecure\\Hooks"
+	"ResourceModules": {
+		"ext.HelloWorld": {
+			"scripts": "hello-world.js",
+			"styles": "hello-world.css",
+			"dependencies": [
+				"mediawiki.util"
+			],
+			"targets": [
+				"mobile",
+				"desktop"
+			],
+			"localBasePath": "resources/ext.HelloWorld",
+			"remoteExtPath": "KickSecure/resources/ext.HelloWorld"
 		}
+	},
+	"AutoloadClasses": {
+		"HelloWorld": "src/HelloWorld.php"
 	},
 	"Hooks": {
-		"BeforePageDisplay": "KicksecureHooks"
-	},
-	"ResourceModules": {
-		"ext.Kicksecure": {
-			"localBasePath": "resources/ext.Kicksecure",
-			"remoteExtPath": "Kicksecure/resources",
-			"dependencies": [],
-			"styles": [
-				"BackToTopButton.css"
-			],
-			"packageFiles": [
-				"BackToTopButton.js"
-			],
-			"messages": []
-		}
+		"BeforePageDisplay": [
+			"HelloWorld::onBeforePageDisplay"
+		]
 	},
 	"manifest_version": 2
 }

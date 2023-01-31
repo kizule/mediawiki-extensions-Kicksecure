@@ -7,10 +7,14 @@ module.exports = function ( grunt ) {
 	grunt.initConfig( {
 		eslint: {
 			options: {
-				cache: true,
-				fix: grunt.option( 'fix' )
+				extensions: [ '.js', '.json' ],
+				cache: true
 			},
-			all: '.'
+			all: [
+				'**/*.{js,json}',
+				'!node_modules/**',
+				'!vendor/**'
+			]
 		},
 		stylelint: {
 			all: [

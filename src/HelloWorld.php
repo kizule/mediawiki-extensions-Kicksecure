@@ -17,21 +17,14 @@
  * @file
  */
 
-namespace MediaWiki\Extension\Kicksecure;
-
-use MediaWiki\Hook\BeforePageDisplayHook;
-use OutputPage;
-use Skin;
-
-class Hooks implements BeforePageDisplayHook {
+class HelloWorld {
 
 	/**
 	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/BeforePageDisplay
 	 * @param OutputPage $out
-	 * @param Skin $skin
 	 */
-	public function onBeforePageDisplay( $out, $skin ): void {
-		$out->addModules( 'ext.Kicksecure' );
+	public static function onBeforePageDisplay( $out ) {
+		$out->addModules( 'ext.HelloWorld' );
 	}
 
 }
