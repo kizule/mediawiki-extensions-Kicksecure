@@ -23,9 +23,7 @@
 				"mobile",
 				"desktop"
 			]
-		}
-	},
-	"ResourceFileModulePaths": {
+		},
 		"localBasePath": "resources/ext.HelloWorld",
 		"remoteExtPath": "KickSecure/resources/ext.HelloWorld"
 	},
