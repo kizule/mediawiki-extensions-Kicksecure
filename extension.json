@@ -24,7 +24,7 @@
 				"desktop"
 			],
 			"localBasePath": "resources/ext.HelloWorld",
-			"remoteExtPath": "KickSecure/resources/ext.HelloWorld"
+			"remoteExtPath": "Kicksecure/resources/ext.HelloWorld"
 		}
 	},
 	"AutoloadClasses": {
