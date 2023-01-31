@@ -17,15 +17,14 @@
  * @file
  */
 
-class Kicksecure {
+class HelloWorld {
 
 	/**
 	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/BeforePageDisplay
 	 * @param OutputPage $out
-	 * @param Skin $skin
 	 */
-	public static function onBeforePageDisplay( $out, $skin ) {
-		$out->addModules( [ 'ext.Kicksecure' ] );
+	public static function onBeforePageDisplay( $out ) {
+		$out->addModules( 'ext.HelloWorld' );
 	}
 
 }

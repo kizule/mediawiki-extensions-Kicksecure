@@ -6,16 +6,19 @@
 		"Kicksecure"
 	],
 	"url": "https://kicksecure.com",
-	"description": "Customizations for the Kicksecure wiki",
+	"description": "A simple extension that displays a small floating box saying \"Hello World\" in the lower right corner of the page.",
 	"license-name": "GPL-2.0-or-later",
 	"type": "other",
 	"requires": {
 		"MediaWiki": ">= 1.35.0"
 	},
 	"ResourceModules": {
-		"ext.Kicksecure": {
-			"scripts": "BackToTopButton.js",
-			"styles": "BackToTopButton.css",
+		"ext.HelloWorld": {
+			"scripts": "hello-world.js",
+			"styles": "hello-world.css",
+			"dependencies": [
+				"mediawiki.util"
+			],
 			"targets": [
 				"mobile",
 				"desktop"
@@ -23,15 +26,15 @@
 		}
 	},
 	"ResourceFileModulePaths": {
-		"localBasePath": "resources/ext.Kicksecure",
-		"remoteExtPath": "KickSecure/resources/ext.Kicksecure"
+		"localBasePath": "resources/ext.HelloWorld",
+		"remoteExtPath": "KickSecure/resources/ext.HelloWorld"
 	},
 	"AutoloadClasses": {
-		"Kicksecure": "src/Kicksecure.php"
+		"HelloWorld": "src/HelloWorld.php"
 	},
 	"Hooks": {
 		"BeforePageDisplay": [
-			"Kicksecure::onBeforePageDisplay"
+			"HelloWorld::onBeforePageDisplay"
 		]
 	},
 	"manifest_version": 2
