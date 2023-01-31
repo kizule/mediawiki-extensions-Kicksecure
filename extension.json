@@ -22,10 +22,10 @@
 			"targets": [
 				"mobile",
 				"desktop"
-			]
-		},
-		"localBasePath": "resources/ext.HelloWorld",
-		"remoteExtPath": "KickSecure/resources/ext.HelloWorld"
+			],
+			"localBasePath": "resources/ext.HelloWorld",
+			"remoteExtPath": "KickSecure/resources/ext.HelloWorld"
+		}
 	},
 	"AutoloadClasses": {
 		"HelloWorld": "src/HelloWorld.php"
