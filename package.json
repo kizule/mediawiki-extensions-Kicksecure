@@ -8,7 +8,7 @@
 		"eslint-config-wikimedia": "0.32.3",
 		"grunt": "1.6.1",
 		"grunt-eslint": "26.0.0",
-		"grunt-stylelint": "0.20.1",
+		"grunt-stylelint": "0.21.0",
 		"stylelint-config-wikimedia": "0.18.0"
 	}
 }
